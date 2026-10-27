@@ -1,10 +1,10 @@
-
 # 000 - Tooling and quality
 
 **Goal:** a Next.js project with automated quality, so that style and rules are
 enforced by tools and not by the agent's memory.
 
 **Scope**
+
 - Next.js app (App Router, TypeScript, Tailwind, ESLint) in the current folder,
   with shadcn/ui initialized. The folder is not empty (AGENTS.md, specs/, docs/,
   design/), so `create-next-app` may refuse to run in it: scaffold in a temporary
@@ -37,9 +37,9 @@ enforced by tools and not by the agent's memory.
   `node_modules` and `.next`; projectKey/organization left as TODOs to fill in by hand.
 
 **Acceptance**
+
 - `npm run check` and `npm run build` pass from a clean state.
 - Files under `design/magicpath/` do not affect lint, format, typecheck or tests.
 - A useless `console.log` or a badly formatted file makes `check`/commit fail.
 
 **Out of scope:** CI, Supabase, Redis, product UI.
-

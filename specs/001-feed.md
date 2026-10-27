@@ -1,9 +1,9 @@
-
 # 001 - Feed
 
 **Goal:** a `/` page that shows the latest 20 wall messages, cached in Redis.
 
 **Data model (migration `supabase/migrations/<timestamp>_create_messages.sql`)**
+
 ```sql
 create table public.messages (
   id uuid primary key default gen_random_uuid(),
@@ -23,6 +23,7 @@ create policy "messages_select_public"
 ```
 
 **Behavior**
+
 - Server Component. Reads `feed:v1` from Redis; on a hit, uses it.
 - On a miss, queries Supabase with the public/anon key (RLS applies), orders by
   `created_at desc`, limit 20, and stores the result in Redis with a 60-second TTL.
@@ -32,6 +33,7 @@ create policy "messages_select_public"
 - UI with Tailwind + shadcn (Card). A single page, no authentication.
 
 **Acceptance**
+
 - With test data, the page lists messages from newest to oldest.
 - A second load within 60 s does not query Supabase (verifiable with a temporary
   log or a test of the cache helper).
@@ -39,4 +41,3 @@ create policy "messages_select_public"
 - Tests: cache helper (hit, miss, Redis failure).
 
 **Out of scope:** pagination, search, authentication.
-

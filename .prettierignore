@@ -1,0 +1,7 @@
+.next/
+.superpowers/
+coverage/
+design/magicpath/
+docs/superpowers/
+node_modules/
+next-env.d.ts

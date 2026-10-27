@@ -1,10 +1,10 @@
-
 # 004 - Design (MagicPath prototype)
 
 **Goal:** an interactive prototype of the single launch-wall page in MagicPath, turned
 into project design tokens, plus an honest evaluation of the tool.
 
 **Human part (outside Codex)**
+
 - In a personal MagicPath account (Free plan, no card), design one page with: header,
   post form (author, message, character counter), feed list (author, text, relative
   time), and the states: empty feed, field validation errors, rate-limited message,
@@ -13,6 +13,7 @@ into project design tokens, plus an honest evaluation of the tool.
 - Write down the credits used and the time it took.
 
 **Codex part**
+
 - Read `design/magicpath/` as reference only (never import from it).
 - Fill `design/Design.md`: colors, typography, radius, spacing, tone, component list,
   and a mapping from each prototype element to a shadcn/ui primitive.
@@ -23,8 +24,8 @@ into project design tokens, plus an honest evaluation of the tool.
   shadcn/ui, and a verdict (keep / drop MagicPath for the next project) with reasons.
 
 **Acceptance**
+
 - `design/Design.md` and `design/EVALUATION.md` are complete; theme tokens applied.
 - `npm run check` and `npm run build` pass; `design/magicpath/` stays excluded.
 
 **Out of scope:** implementing the feed or the form (001, 002); Figma.
-

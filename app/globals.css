@@ -1,9 +1,9 @@
-@import "tailwindcss" source(none);
+@import 'tailwindcss' source(none);
 @source "../app";
 @source "../components";
 @source "../lib";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
 
 @custom-variant dark (&:is(.dark *));
 
