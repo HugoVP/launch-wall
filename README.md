@@ -1,0 +1,1 @@
+launch-wall is a didactic message wall built with Next.js, Supabase, Redis, and Vercel. See [AGENTS.md](AGENTS.md) for project workflow, [specs/README.md](specs/README.md) for the spec order, and [design/](design/) for design references.
