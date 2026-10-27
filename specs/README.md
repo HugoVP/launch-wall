@@ -8,7 +8,7 @@ Execution order (004 runs second because the UI specs depend on the prototype):
 
 | Order | Spec                                     | Status |
 | ----- | ---------------------------------------- | ------ |
-| 1     | 000-tooling                              | todo   |
+| 1     | 000-tooling                              | done   |
 | 2     | 004-design (MagicPath prototype + theme) | todo   |
 | 3     | 001-feed                                 | todo   |
 | 4     | 002-post-message                         | todo   |
